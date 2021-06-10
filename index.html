@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Find House</title>
+    <!-- tag meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device, initial-scale= 1.0">
+    <!-- akhir tag meta -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- akhir css -->
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 99999999;">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-brand" style="font-size: 30px;font-weight: 700;color: #70AAB6;">House.</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">House</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Feature</a>
+                    </li>
+                </ul>
+                <div class="bt-1 text-center" style="margin-left: auto;padding: 13px 30px;background-color: transparent;border-radius: 2222px;">
+                    <a href="#" style="text-decoration: none;color: #fff;font-weight: 600;">Log In</a>
+                </div>
+                <div class="bt text-center" style="padding: 13px 30px;background-color: #70AAB6;border-radius: 2222px;">
+                    <a href="#" style="text-decoration: none;color: #fff;font-weight: 600;">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- akhri navbar -->
+
+    <!-- section banner -->
+    <div class="section-banner">
+        <div class="container">
+            <div class="row" style="margin-top: 80px;">
+                <div class="col-lg-7">
+                    <div class="text-content">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="content">
+                                    <div class="content">
+                                        <div class="contenty-text">
+                                            <div class="text-content">
+                                                <div class="content">
+                                                    <div class="content-main">
+                                                        <div class="main-content">
+                                                            <div class="conteny">
+                                                                <div class="text">
+                                                                    <h1 style="color: #29373a;">Find for a house <br>your dream easily</h1>
+                                                                    <p style="padding: 20px 0;">find the house you are looking for quickly and <br> easily with just one click now below</p>
+                                                                </div>
+                                                                <div class="nav-tab-content" style="position: relative !important;">
+                                                                    <div class="content">
+                                                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="position: relative;">
+                                                                            <li class="nav-item" role="presentation">
+                                                                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="border-radius: 20px 0 0 0 !important;padding: 10px 25px;">Rent</button>
+                                                                            </li>
+                                                                            <li class="nav-item" role="presentation">
+                                                                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="padding: 10px 28px !important;">Buy</button>
+                                                                            </li>
+                                                                            <li class="nav-item" role="presentation">
+                                                                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="padding: 10px 30px !important;border-radius: 0 20px 0 0 !important;">Sell</button>
+                                                                            </li>
+                                                                          </ul>
+                                                                          <div class="tab-content" id="pills-tabContent">
+                                                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" style="border-bottom: none !important;">
+                                                                                <form action="">
+                                                                                    <div class="row baris-1" style="padding-top: 8px;padding-bottom: 10px;border-radius: 0 20px 20px 20px;">
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">Location</label>
+                                                                                            <select name="select" id="" class="form-select" style="font-size: 15px;">
+                                                                                                <option value="opotion">Jakarta, Indonesia</option>
+                                                                                                <option value="opotion">Bogor, Indonesia</option>
+                                                                                                <option value="opotion">Kuala lumpur, Malaysia</option>
+                                                                                                <option value="opotion">Semarang, Indonesia</option>
+                                                                                                <option value="opotion">Manchester, Inggris</option>
+                                                                                                <option value="opotion">Badung, Bali</option>
+                                                                                                <option value="opotion">Madrid, Spain</option>
+                                                                                                <option value="opotion">Valencia, Spain</option>
+                                                                                                <option value="opotion">Semarang, Indonesia</option>
+                                                                                                <option value="opotion">Munich, Germany</option>
+                                                                                                <option value="opotion" >Solo, Indonesia</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">House Type</label>
+                                                                                            <select name="select" id="" class="form-select" style="font-size: 15px;">
+                                                                                                <option value="opotion">Apartement</option>
+                                                                                                <option value="opotion">Condo</option>
+                                                                                                <option value="opotion">Co-Op</option>
+                                                                                                <option value="opotion">Single-Family</option>
+                                                                                                <option value="opotion">Tiny Home</option>
+                                                                                                <option value="opotion">Townhome</option>
+                                                                                                <option value="opotion">Cape Cod</option>
+                                                                                                <option value="opotion">Colonial</option>
+                                                                                                <option value="opotion">Contemporary</option>
+                                                                                                <option value="opotion">Cottage</option>
+                                                                                                <option value="opotion" >French Country</option>
+                                                                                                <option value="opotion">Single-Family</option>
+                                                                                                <option value="opotion">Farmhouse</option>
+                                                                                                <option value="opotion">Townhome</option>
+                                                                                                <option value="opotion">Greek Revival</option>
+                                                                                                <option value="opotion">Midcentury Modern</option>
+                                                                                                <option value="opotion">Split-Level</option>
+                                                                                                <option value="opotion"> Tudor</option>
+                                                                                                <option value="opotion" >Victorian</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">Pricing</label>
+                                                                                            <select name="select" id="" class="form-select">
+                                                                                                <option value="opotion">$100 - $200</option>
+                                                                                                <option value="opotion">$200 - $300</option>
+                                                                                                <option value="opotion">$300 - $400</option>
+                                                                                                <option value="opotion">$400 - $500</option>
+                                                                                                <option value="opotion">$600 - $700</option>
+                                                                                                <option value="opotion">$700 - 8200</option>
+                                                                                                <option value="opotion">$800 - $900</option>
+                                                                                                <option value="opotion">$900 - $1000</option>
+                                                                                                <option value="opotion">$1000 - $1200</option>
+                                                                                                <option value="opotion">$1200 - $1300</option>
+                                                                                                <option value="opotion" >$1300 - $1500</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3" style="margin-top: 33px;">
+                                                                                            <button type="submit" class="form-control" style="padding: 10px 25px;background-color: #70aab6;color: #fff;font-weight: 500;border: none;outline: none;border-radius: 333px !important;font-weight: 600;">
+                                                                                                Search
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="border-bottom: none !important;">
+                                                                                <form action="">
+                                                                                    <div class="row baris-1" style="padding-top: 8px;padding-bottom: 10px;border-radius: 0 20px 20px 20px;">
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">Location</label>
+                                                                                            <select name="select" id="" class="form-select" style="font-size: 15px;">
+                                                                                                <option value="opotion">Jakarta, Indonesia</option>
+                                                                                                <option value="opotion">Bogor, Indonesia</option>
+                                                                                                <option value="opotion">Kuala lumpur, Malaysia</option>
+                                                                                                <option value="opotion">Semarang, Indonesia</option>
+                                                                                                <option value="opotion">Manchester, Inggris</option>
+                                                                                                <option value="opotion">Badung, Bali</option>
+                                                                                                <option value="opotion">Madrid, Spain</option>
+                                                                                                <option value="opotion">Valencia, Spain</option>
+                                                                                                <option value="opotion">Semarang, Indonesia</option>
+                                                                                                <option value="opotion">Munich, Germany</option>
+                                                                                                <option value="opotion" >Solo, Indonesia</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">House Type</label>
+                                                                                            <select name="select" id="" class="form-select" style="font-size: 15px;">
+                                                                                                <option value="opotion">Apartement</option>
+                                                                                                <option value="opotion">Condo</option>
+                                                                                                <option value="opotion">Co-Op</option>
+                                                                                                <option value="opotion">Single-Family</option>
+                                                                                                <option value="opotion">Tiny Home</option>
+                                                                                                <option value="opotion">Townhome</option>
+                                                                                                <option value="opotion">Cape Cod</option>
+                                                                                                <option value="opotion">Colonial</option>
+                                                                                                <option value="opotion">Contemporary</option>
+                                                                                                <option value="opotion">Cottage</option>
+                                                                                                <option value="opotion" >French Country</option>
+                                                                                                <option value="opotion">Single-Family</option>
+                                                                                                <option value="opotion">Farmhouse</option>
+                                                                                                <option value="opotion">Townhome</option>
+                                                                                                <option value="opotion">Greek Revival</option>
+                                                                                                <option value="opotion">Midcentury Modern</option>
+                                                                                                <option value="opotion">Split-Level</option>
+                                                                                                <option value="opotion"> Tudor</option>
+                                                                                                <option value="opotion" >Victorian</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">Pricing</label>
+                                                                                            <select name="select" id="" class="form-select">
+                                                                                                <option value="opotion">$100 - $200</option>
+                                                                                                <option value="opotion">$200 - $300</option>
+                                                                                                <option value="opotion">$300 - $400</option>
+                                                                                                <option value="opotion">$400 - $500</option>
+                                                                                                <option value="opotion">$600 - $700</option>
+                                                                                                <option value="opotion">$700 - 8200</option>
+                                                                                                <option value="opotion">$800 - $900</option>
+                                                                                                <option value="opotion">$900 - $1000</option>
+                                                                                                <option value="opotion">$1000 - $1200</option>
+                                                                                                <option value="opotion">$1200 - $1300</option>
+                                                                                                <option value="opotion" >$1300 - $1500</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3" style="margin-top: 33px;">
+                                                                                            <button type="submit" class="form-control" style="padding: 10px 25px;background-color: #70aab6;color: #fff;font-weight: 500;border: none;outline: none;border-radius: 333px !important;font-weight: 600;">
+                                                                                                Search
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" style="border-bottom: none !important;">
+                                                                                <form action="">
+                                                                                    <div class="row baris-1" style="padding-top: 8px;padding-bottom: 10px;border-radius: 0 20px 20px 20px;">
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">Location</label>
+                                                                                            <select name="select" id="" class="form-select" style="font-size: 15px;">
+                                                                                                <option value="opotion">Jakarta, Indonesia</option>
+                                                                                                <option value="opotion">Bogor, Indonesia</option>
+                                                                                                <option value="opotion">Kuala lumpur, Malaysia</option>
+                                                                                                <option value="opotion">Semarang, Indonesia</option>
+                                                                                                <option value="opotion">Manchester, Inggris</option>
+                                                                                                <option value="opotion">Badung, Bali</option>
+                                                                                                <option value="opotion">Madrid, Spain</option>
+                                                                                                <option value="opotion">Valencia, Spain</option>
+                                                                                                <option value="opotion">Semarang, Indonesia</option>
+                                                                                                <option value="opotion">Munich, Germany</option>
+                                                                                                <option value="opotion" >Solo, Indonesia</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">House Type</label>
+                                                                                            <select name="select" id="" class="form-select" style="font-size: 15px;">
+                                                                                                <option value="opotion">Apartement</option>
+                                                                                                <option value="opotion">Condo</option>
+                                                                                                <option value="opotion">Co-Op</option>
+                                                                                                <option value="opotion">Single-Family</option>
+                                                                                                <option value="opotion">Tiny Home</option>
+                                                                                                <option value="opotion">Townhome</option>
+                                                                                                <option value="opotion">Cape Cod</option>
+                                                                                                <option value="opotion">Colonial</option>
+                                                                                                <option value="opotion">Contemporary</option>
+                                                                                                <option value="opotion">Cottage</option>
+                                                                                                <option value="opotion" >French Country</option>
+                                                                                                <option value="opotion">Single-Family</option>
+                                                                                                <option value="opotion">Farmhouse</option>
+                                                                                                <option value="opotion">Townhome</option>
+                                                                                                <option value="opotion">Greek Revival</option>
+                                                                                                <option value="opotion">Midcentury Modern</option>
+                                                                                                <option value="opotion">Split-Level</option>
+                                                                                                <option value="opotion"> Tudor</option>
+                                                                                                <option value="opotion" >Victorian</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 pricing">
+                                                                                            <label for="" class="form-label" style="font-weight: 600;">Pricing</label>
+                                                                                            <select name="select" id="" class="form-select">
+                                                                                                <option value="opotion">$100 - $200</option>
+                                                                                                <option value="opotion">$200 - $300</option>
+                                                                                                <option value="opotion">$300 - $400</option>
+                                                                                                <option value="opotion">$400 - $500</option>
+                                                                                                <option value="opotion">$600 - $700</option>
+                                                                                                <option value="opotion">$700 - 8200</option>
+                                                                                                <option value="opotion">$800 - $900</option>
+                                                                                                <option value="opotion">$900 - $1000</option>
+                                                                                                <option value="opotion">$1000 - $1200</option>
+                                                                                                <option value="opotion">$1200 - $1300</option>
+                                                                                                <option value="opotion" >$1300 - $1500</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-md-3" style="margin-top: 33px;">
+                                                                                            <button type="submit" class="form-control" style="padding: 10px 25px;background-color: #70aab6;color: #fff;font-weight: 500;border: none;outline: none;border-radius: 333px !important;font-weight: 600;">
+                                                                                                Search
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                          </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img-content">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="content-img">
+                                    <div class="img-content">
+                                        <div class="content">
+                                            <div class="content-img">
+                                                <div class="img-content">
+                                                    <div class="content">
+                                                        <div class="content-img">
+                                                            <div class="main-ocntnet">
+                                                                <div class="content-content-img">
+                                                                    <div class="main-content">
+                                                                        <div class="imgconetnty">
+                                                                            <div class="content">
+                                                                                <div class="img">
+                                                                                    <img src="./banner/banner.jpg" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir section banner -->
+
+
+    <!-- section service -->
+    <div class="section-service">
+        <div class="container">
+            <div class="text-header">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="content-text">
+                            <div class="text-content">
+                                <div class="content">
+                                    <div class="text">
+                                        <div class="text-content">
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <h2><b>Our Service</b></h2>
+                                                    <p style="padding-top: 2px;opacity: 0.8;">we serve with all our heart for you</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top: 50px;">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card-service text-center" style="box-shadow: 0 0 4px rgba(0,0,0,0.125);padding: 15px 20px;border-radius: 20px;">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="main-content">
+                                    <div class="content">
+                                        <div class="img">
+                                            <div class="img-content">
+                                                <div class="content" style="margin-top: 15px;">
+                                                    <div class="icon">
+                                                        <img src="./feature/call-center.png" style="width: 20%;height: 20%;" alt="">
+                                                    </div>
+                                                    <div class="text-conten" style="margin-top: 10px;">
+                                                        <div class="content">
+                                                            <div class="text">
+                                                                <h5 style="font-weight: 700;">Ready 24 hours</h5>
+                                                                <p style="padding-top: 20px;font-size: 15px;">we are ready 24 hours
+                                                                    to help you so you don't have to worry about the convenience anymore</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card-service text-center" style="box-shadow: 0 0 4px rgba(0,0,0,0.125);padding: 15px 20px;border-radius: 20px;">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="main-content">
+                                    <div class="content">
+                                        <div class="img">
+                                            <div class="img-content">
+                                                <div class="content" style="margin-top: 15px;">
+                                                    <div class="icon">
+                                                        <img src="./feature/workflow.png" style="width: 20%;height: 20%;" alt="">
+                                                    </div>
+                                                    <div class="text-conten" style="margin-top: 10px;">
+                                                        <div class="content">
+                                                            <div class="text">
+                                                                <h5 style="font-weight: 700;">Strategic</h5>
+                                                                <p style="padding-top: 20px;font-size: 15px;">a very strategic location such as close to schools, shopping places your family more comfortable
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card-service text-center" style="box-shadow: 0 0 4px rgba(0,0,0,0.125);padding: 15px 20px;border-radius: 20px;">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="main-content">
+                                    <div class="content">
+                                        <div class="img">
+                                            <div class="img-content">
+                                                <div class="content" style="margin-top: 15px;">
+                                                    <div class="icon">
+                                                        <img src="./feature/credit-cards-payment.png" style="width: 20%;height: 20%;" alt="">
+                                                    </div>
+                                                    <div class="text-conten" style="margin-top: 10px;">
+                                                        <div class="content">
+                                                            <div class="text">
+                                                                <h5 style="font-weight: 700;">Easy payment
+                                                                </h5>
+                                                                <p style="padding-top: 20px;font-size: 15px;">you can very easily pay because we provide many payment options to make it easier for you
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir  section service -->
+
+    <!-- section about us -->
+    <div class="section-about" style="margin-top: 120px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="img-content">
+                        <div class="content-main">
+                            <div class="main-content">
+                                <div class="content-img">
+                                    <div class="main-content">
+                                        <div class="content">
+                                            <div class="content-main">
+                                                <div class="main-content">
+                                                    <div class="content">
+                                                        <div class="img">
+                                                            <img src="./about us/joel-filipe-RFDP7_80v5A-unsplash.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-content">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="content-text">
+                                    <div class="text-content">
+                                        <div class="mmain-cocntent">
+                                            <div class="content">
+                                                <div class="content-text">
+                                                    <div class="text-content">
+                                                        <div class="content">
+                                                            <div class="text">
+                                                                <h2><b>why choose us ?</b></h2>
+                                                                <p style="padding: 20px 0;opacity: 0.8;">we will make it easier for you to find or sell <br> the house you really want with a very easy <br> payment process besides the houses we <br> offer are also strategic and well-maintained</p>
+                                                                <div class="btn" style="background-color: #70AAB6;padding: 10px 25px;border-radius: 90px;">
+                                                                    <a href="#" style="text-decoration: none;color: #fff;font-weight: 500;">Learn More</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir about us -->
+
+    <!-- section house -->
+    <div class="section-house" style="margin-top: 100px;">
+        <div class="container">
+            <div class="text-header">
+                <div class="content-main">
+                    <div class="main-content">
+                        <div class="text-content">
+                            <div class="content">
+                                <div class="content-main">
+                                    <div class="main-content">
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <div class="text-content">
+                                                    <div class="content">
+                                                        <div class="text">
+                                                            <h2><b>Populer apartement <br> 
+                                                                right now</b></h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme" style="margin-top: 50px;">
+                <div class="item">
+                    <a href="#" style="text-decoration: none;color: #000;"><div class="card-apartement" style="border-radius: 15px;">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="bg-top" style="position: relative;">
+                                    <span style="background-color: #fff;padding: 4px 7px;position: absolute;font-weight: 500;font-size: 13px;top: 10px;left: 10px;">Apartment</span>
+                                    <img src="./apartemet/brandon-griggs-wR11KBaB86U-unsplash.jpg" style="width: 100%;height: 100%;border-radius: 15px 15px 0 0;" alt="">
+                                </div>
+                                <div class="text-body" style="padding: 15px;border-radius: 0 0 15 15pxpx;">
+                                    <h5 style="font-weight: 600;">Semanggi Residences</h5>
+                                    <div class="price">
+                                        <h5 style="font-weight: 600;"><span style="color: #70AAB6;">$140.11</span><span style="font-size: 15px;font-weight: 600;"> / Mounth</span></h5>
+                                    </div>
+                                    <div class="lokasi">
+                                        <p style="font-size: 14px;"><i class="fal fa-map-marker-alt" style="font-size: 15px;margin-right: 3px;"></i> Jl. Gatot Subroto, Jakarta Selatan</p>
+                                    </div>
+                                    <div class="service" style="padding-top: 10px;">
+                                        <p style="font-weight: 500;"><span><i class="fas fa-bed" style="margin-right: 2px;color: #70AAB6;"></i> 2 bd</span> <span><i class="fas fa-bullseye" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 600 m</span> <span><i class="far fa-toilet" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 3 bt</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" style="text-decoration: none;color: #000;"><div class="card-apartement" style="border-radius: 15px;">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="bg-top" style="position: relative;">
+                                    <span style="background-color: #fff;padding: 4px 7px;position: absolute;font-weight: 500;font-size: 13px;top: 10px;left: 10px;">Apartment</span>
+                                    <img src="./apartemet/leohoho-nyWBX6cuR14-unsplash.jpg" style="width: 100%;height: 100%;border-radius: 15px 15px 0 0;" alt="">
+                                </div>
+                                <div class="text-body" style="padding: 15px 15px 10px 15px;border-radius: 0 0 15 15pxpx;">
+                                    <h5 style="font-weight: 600;">Menteng Residences</h5>
+                                    <div class="price">
+                                        <h5 style="font-weight: 600;"><span style="color: #70AAB6;">$90.55</span><span style="font-size: 15px;font-weight: 600;"> / Mounth</span></h5>
+                                    </div>
+                                    <div class="lokasi">
+                                        <p style="font-size: 14px;"><i class="fal fa-map-marker-alt" style="font-size: 15px;margin-right: 3px;"></i> Jl. Gatot Subroto, Jakarta Selatan</p>
+                                    </div>
+                                    <div class="service" style="padding-top: 10px;">
+                                        <p style="font-weight: 500;"><span><i class="fas fa-bed" style="margin-right: 2px;color: #70AAB6;"></i> 1 bd</span> <span><i class="fas fa-bullseye" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 350 m</span> <span><i class="far fa-toilet" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 1 bt</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" style="text-decoration: none;color: #000;"><div class="card-apartement" style="border-radius: 15px;">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="bg-top" style="position: relative;">
+                                    <span style="background-color: #fff;padding: 4px 7px;position: absolute;font-weight: 500;font-size: 13px;top: 10px;left: 10px;">Apartment</span>
+                                    <img src="./apartemet/malcolm-shadrach-_r80LCluvVM-unsplash.jpg" style="width: 100%;height: 100%;border-radius: 15px 15px 0 0;" alt="">
+                                </div>
+                                <div class="text-body" style="padding: 15px;border-radius: 0 0 15 15pxpx;">
+                                    <h5 style="font-weight: 600;">Semanggi Residences</h5>
+                                    <div class="price">
+                                        <h5 style="font-weight: 600;"><span style="color: #70AAB6;">$140.11</span><span style="font-size: 15px;font-weight: 600;"> / Mounth</span></h5>
+                                    </div>
+                                    <div class="lokasi">
+                                        <p style="font-size: 14px;"><i class="fal fa-map-marker-alt" style="font-size: 15px;margin-right: 3px;"></i> Jl. Gatot Subroto, Jakarta Selatan</p>
+                                    </div>
+                                    <div class="service" style="padding-top: 10px;">
+                                        <p style="font-weight: 500;"><span><i class="fas fa-bed" style="margin-right: 2px;color: #70AAB6;"></i> 2 bd</span> <span><i class="fas fa-bullseye" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 600 m</span> <span><i class="far fa-toilet" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 3 bt</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" style="text-decoration: none;color: #000;"><div class="card-apartement" style="border-radius: 15px;">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="bg-top" style="position: relative;">
+                                    <span style="background-color: #fff;padding: 4px 7px;position: absolute;font-weight: 500;font-size: 13px;top: 10px;left: 10px;">Apartment</span>
+                                    <img src="./apartemet/grant-lemons-jTCLppdwSEc-unsplash.jpg" style="width: 100%;height: 100%;border-radius: 15px 15px 0 0;" alt="">
+                                </div>
+                                <div class="text-body" style="padding: 15px 15px 10px 15px;border-radius: 0 0 15 15pxpx;">
+                                    <h5 style="font-weight: 600;">Amarukma Residences</h5>
+                                    <div class="price">
+                                        <h5 style="font-weight: 600;"><span style="color: #70AAB6;">$105.00</span><span style="font-size: 15px;font-weight: 600;"> / Mounth</span></h5>
+                                    </div>
+                                    <div class="lokasi">
+                                        <p style="font-size: 14px;"><i class="fal fa-map-marker-alt" style="font-size: 15px;margin-right: 3px;"></i> Jl. Menteng, Jakarta Selatan</p>
+                                    </div>
+                                    <div class="service" style="padding-top: 10px;">
+                                        <p style="font-weight: 500;"><span><i class="fas fa-bed" style="margin-right: 2px;color: #70AAB6;"></i> 2 bd</span> <span><i class="fas fa-bullseye" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 400 m</span> <span><i class="far fa-toilet" style="margin-right: 2px;color: #70AAB6;margin-left: 10px;"></i> 2 bt</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir section house -->
+
+    <!-- section sponsor -->
+    <div class="section-sponsor" style="margin-top: 100px;">
+        <div class="container">
+            <div class="text-header">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="text-center">
+                            <h2><b>Our Partnership</b></h2>
+                            <p style="padding-top: 2px;opacity: 0.8;">Som of our best partner in real estate <br> 
+                                and mortagge service worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-sponsor">
+                    <div class="row justify-content-center" style="margin-top: 50px;">
+                        <img src="./sponsor/bukalapak-logodownload-38811.png" alt=""> 
+                        <img src="./sponsor/kisspng-pegipegi-discounts-and-allowances-hotel-business-c-buka-bersama-5b3129b198a662.5155770715299485936253.png" alt=""> 
+                        <img src="./sponsor/tokopedia-38850.png" alt="">
+                        <img src="./sponsor/58f373b3a4fa116215a92405.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- khir section sponsor -->
+
+    <!-- section contact us -->
+    <div class="section-contact" style="margin-top: 100px;">
+        <div class="container">
+            <div class="text-header">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="contet-main">
+                            <div class="content">
+                                <div class="content-main">
+                                    <div class="main-content">
+                                        <div class="content">
+                                            <div class="text-content">
+                                                <div class="content">
+                                                    <div class="text-center">
+                                                        <h2><b>Contact Us</b></h2>
+                                                        <p style="padding-top: 2px;">You can fill out this form to ask questions <br>
+                                                            about the house you are looking for
+                                                           </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top: 50px;">
+                <div class="col-md-6" style="background-color: #D1EBF0;padding: 50px;">
+                    <div class="form-content">
+                        <div class="main-content">
+                            <div class="content">
+                                <div class="content-main">
+                                    <div class="main-contet">
+                                        <div class="content">
+                                            <div class="content-form">
+                                                <div class="main-form">
+                                                    <div class="form-content">
+                                                        <div class="content">
+                                                            <form action="form-content">
+                                                                <div class="nama">
+                                                                    <label for="" class="form-label" style="font-weight: 600;margin-bottom: 10px;">Name</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter your name" style="padding: 13px 20px;border: none;" required>
+                                                                </div>
+                                                                <div class="email" style="margin-top: 25px;">
+                                                                    <label for="" class="form-label" style="font-weight: 600;margin-bottom: 10px;">Email</label>
+                                                                    <input type="text" class="form-control" placeholder="Email address" style="padding: 13px 20px;border: none;" required>
+                                                                </div>
+                                                                <div class="email" style="margin-top: 25px;">
+                                                                    <label for="" style="font-weight: 600;margin-bottom: 10px;">Massage</label>
+                                                                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter your massage" style="border: none;" required></textarea>
+                                                                </div>
+                                                                <div class="btn" style="float: right;margin-top: 10px;">
+                                                                    <button type="submit" class="form-control" style="border: none;padding: 11px 30px;background-color: #70AAB6;border-radius: 22222px;color: #fff;font-weight: 600;">Submit</button>
+                                                                </div>     
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhri section contact -->
+
+    <!-- footer -->
+    <footer style="margin-top: 150px;">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-3">
+                <a href="#" class="navbar-brand" style="font-size: 30px;font-weight: 700;color: #70AAB6;">House.</a>
+                <p style="padding: 15px 0;opacity: 0.8;font-weight: 500;">find the house you want  
+                    easily and easily only at home
+                    </p>
+               </div>
+               <div class="col-lg-3">
+                   <h5>Feature</h5>
+                   <ul>
+                       <li>
+                           <a href="#">Service</a>
+                       </li>
+                       <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                   </ul>
+               </div>
+               <div class="col-lg-3">
+                   <h5>Service</h5>
+                   <ul>
+                       <li>
+                           <a href="#">House</a>
+                       </li>
+                       <li>
+                        <a href="#">Appartement</a>
+                    </li>
+                    <li>
+                        <a href="#">Discound</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                   </ul>
+               </div> 
+               <div class="col-lg-3">
+                   <h5>Follow Us</h5>
+                   <ul>
+                       <li>
+                           <a href="#">Instagram</a>
+                       </li>
+                       <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Linkedin</a>
+                    </li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <script src="./index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+</html>
